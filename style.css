@@ -34,6 +34,7 @@ header {
 .header_localisation p {
     font-size: 1.5em;
     font-weight: bold;
+    padding-right: 4em;
 }
 
 .fa-location-dot {
@@ -175,11 +176,26 @@ font-size: 2em;
     font-size: 1.5em;
 }
 
-.like {
+input {
+    height: 0;
     float: right;
     margin-right: 2em;
 }
 
+input[type=checkbox]:before { 
+    content:""; 
+    display:inline-block; 
+    width:1.85em; 
+    height:1.61em;  
+}
+
+input[type=checkbox]:before { 
+    background: url(images/logo/coeur_vide.png);
+}
+
+input[type=checkbox]:checked:before { 
+    background: url(images/logo/coeur_like.png);
+}
 /*:::::::::::::::::::::::::FOOTER:::::::::*/
 footer {
     background-color: rgb(44, 42, 42);
@@ -210,30 +226,50 @@ footer {
     padding-right: 0.5em;
 }
 
-.coeur {
-    display: none;
-}
-.coeur_carre {
-    margin: 10%;
-    width: 15px;
-    height: 15px;
-    background: #9356DC;
-    position: relative;
-    transform: rotate(45deg);
-}
+@media screen and (max-width: 800px) {
 
-.coeur_rond {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #9356DC;
-    position: absolute;
-}
+    .main_fonctionnement_list ul li {
+        margin: 1em 1em 1em 1em;
+        width: 15em;
+    }
 
-.coeur_rond:nth-child(1) {
-    top: -50%;
-}
+    .main_restaurant_card figure {
+        width: 35em;
+        height: 20em;
+    }
 
-.coeur_rond:nth-child(2) {
-    left: -50%;
-}
+    .main_restaurant_card figure button {
+        margin: 0.9em 0em 0em 20em;
+    }
+
+    input {
+        height: 0;
+        float: right;
+        margin-right: 2em;
+    }
+
+    .main_restaurant_card figure figcaption b, p {
+        font-size: 1.3em;
+    }
+  }
+
+  @media screen and (max-width: 695px) {
+
+    .main_fonctionnement_list ul li {
+        margin: 1em 1em 1em 1em;
+        width: 13em;
+    }
+
+    .main_restaurant_card figure {
+        width: 25em;
+        height: 19em;
+    }
+
+    .main_restaurant_card figure button {
+        margin: 0.9em 0em 0em 12.2em;
+    }
+
+    .main_restaurant_card figure figcaption b, p {
+        font-size: 1em;
+    }
+  }
