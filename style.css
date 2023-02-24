@@ -169,7 +169,8 @@ font-size: 2em;
     opacity: 0.8;
 }
 
-.main_restaurant_card figure figcaption b, p {
+.main_restaurant_card figure figcaption b, 
+.main_restaurant_card figure figcaption p {
     color: black;
     padding: 0.3em 0em 0em 2em;
     margin: 0;
@@ -186,7 +187,7 @@ input[type=checkbox]:before {
     content:""; 
     display:inline-block; 
     width:1.85em; 
-    height:1.61em;  
+    height:1.59em;  
 }
 
 input[type=checkbox]:before { 
@@ -196,6 +197,7 @@ input[type=checkbox]:before {
 input[type=checkbox]:checked:before { 
     background: url(images/logo/coeur_like.png);
 }
+
 /*:::::::::::::::::::::::::FOOTER:::::::::*/
 footer {
     background-color: rgb(44, 42, 42);
@@ -204,6 +206,8 @@ footer {
     font-family: "shrikhand", sans-serif;
     font-size: 2em;
     color: white;
+    padding: 0.3em 0em 0em 2em;
+    margin: 0;
 }
 
 .footer_liste {
@@ -218,6 +222,8 @@ footer {
 .footer_liste p {
     color: white;
     font-size: 1.2em;
+    padding: 0.3em 0em 0em 2em;
+    margin: 0;
 }
 
 .fa-utensils,
@@ -226,6 +232,7 @@ footer {
     padding-right: 0.5em;
 }
 
+/*:::::::::::::::::::::::::MEDIA::::::::::*/
 @media screen and (max-width: 800px) {
 
     .main_fonctionnement_list ul li {
