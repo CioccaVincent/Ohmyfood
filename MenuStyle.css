@@ -88,7 +88,7 @@ input[type=checkbox]:checked:before {
 .main_selection_titre {
     font-size: 1.5em;
     width: fit-content;
-    border-bottom: solid aquamarine;
+    border-bottom: solid #99E2D0;
 }
 
 .main_selection ul {
@@ -110,6 +110,18 @@ input[type=checkbox]:checked:before {
 .main_selection ul li p b {
     float: right;
     margin-right: 3em;
+}
+
+.main_selection_valide {
+    display: flex;
+    justify-content: end;
+    background-color: #99E2D0;
+    width: 5em;
+}
+
+.fa-circle-check {
+    font-size: 2em;
+    color: white;
 }
 
 .header_btn {
