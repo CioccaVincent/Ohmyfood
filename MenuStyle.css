@@ -113,15 +113,29 @@ input[type=checkbox]:checked:before {
 }
 
 .main_selection_valide {
-    display: flex;
-    justify-content: end;
+    position: absolute;
+    margin-left:67.2em;
+    padding: 2.2em;
+    border-radius: 0px 25px 25px 0px;
     background-color: #99E2D0;
-    width: 5em;
+    transition: transform .8s ease-in-out;
+    translate: translateX(0);   
 }
+
+.main_selection_valide:hover {
+    translate: translateX(50px); 
+}
+
 
 .fa-circle-check {
     font-size: 2em;
     color: white;
+    transition: transform .8s ease-in-out;
+    transform: rotate(0turn);
+}
+
+.fa-circle-check:hover {
+    transform: rotate(-1turn);
 }
 
 .header_btn {
