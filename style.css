@@ -1,5 +1,5 @@
 /*LOADER*/
-/* .box_loader {
+.box_loader {
     position: absolute;
     padding: 20em 0em 0em 50em;
 }
@@ -30,7 +30,7 @@
       background: #FFF;
       box-shadow: -24px 0 #FFF, 24px 0 #FF3D00;
     }
-  } */
+  }
 
 /*LOADER*/
 body {

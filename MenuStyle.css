@@ -97,53 +97,60 @@ input[type=checkbox]:checked:before {
     border-bottom: solid #99E2D0;
 }
 
-.main_selection ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.main_selection_menu {
+    position: relative;
+    margin: 2em 2em;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0px 3px 3px 2px grey;
 }
 
-.main_selection ul li {
-    margin: 1em 0em 1em 0em;
-    padding: 1.5em 0em 1em 1.3em;
-    width: 93%;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 0px 3px 3px 2px grey;
+.main_selection_menu_texte b {
     font-size: 1.2em;
     font-weight: bold;
 }
 
-.main_selection ul li p b {
+.main_selection_menu_texte p b {
     float: right;
     margin-right: 3em;
 }
 
-/* .main_selection_valide {
+.main_selection_valide {
     position: absolute;
-    margin-left:67.2em;
-    padding: 2.2em;
-    border-radius: 0px 25px 25px 0px;
-    background-color: #99E2D0;  
-} */
+    background-color: #99E2D0;
+    border-radius: 0px 20px 20px 0px;
+    height: 6.6em;
+    width: 7em;
+    top: 0;
+    right: 0;
+}
 
-.main_selection ul li::before {
-    position:absolute;
-    width:4.5em;
-    height:4.5em;
-    background:#99E2D0;
-    left:50%;
+.fa-circle-check {
+    font-size: 2em;
+    color: white;
+    padding: 1.2em;
+    transition: transform .8s ease-in-out;
+    transform: rotate(0turn);
+}
+
+.main_selection_menu:hover .fa-circle-check {
+    transform: rotate(-1turn);
+}
+
+.main_selection_menu:hover .main_selection_valide {
     transform:translateX(-50%);
+    left: 50%;
     border-radius: 0px 25px 25px 0px;
-    animation:fill 3s ease-in-out infinite;
+    animation:fill 2s ease-in-out ;
   }
 
   @keyframes fill {
     from {
-      left:1560px;
+      left:50px;
       transform:translateX(-50%);
     }
     to {
-      left:1445px;
+      left:0px;
       transform:translateX(-50%);
     }
   }
