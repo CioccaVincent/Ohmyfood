@@ -51,8 +51,14 @@ header {
 
 /*:::::::::::::::::::::::::MAIN:::::::::::*/
 main {
+    background-color: white;
     padding-left: 2em;
     border-radius: 0% 0% 0% 0%;
+    transform: translateY(-46px);
+    border-radius: 55px 55px 0px 0px;
+    border-top: solid 1px;
+
+ 
 }
 
 .main_titre {
@@ -112,20 +118,35 @@ input[type=checkbox]:checked:before {
     margin-right: 3em;
 }
 
-.main_selection_valide {
+/* .main_selection_valide {
     position: absolute;
     margin-left:67.2em;
     padding: 2.2em;
     border-radius: 0px 25px 25px 0px;
-    background-color: #99E2D0;
-    transition: transform .8s ease-in-out;
-    translate: translateX(0);   
-}
+    background-color: #99E2D0;  
+} */
 
-.main_selection_valide:hover {
-    translate: translateX(50px); 
-}
+.main_selection ul li::before {
+    position:absolute;
+    width:4.5em;
+    height:4.5em;
+    background:#99E2D0;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius: 0px 25px 25px 0px;
+    animation:fill 3s ease-in-out infinite;
+  }
 
+  @keyframes fill {
+    from {
+      left:1560px;
+      transform:translateX(-50%);
+    }
+    to {
+      left:1445px;
+      transform:translateX(-50%);
+    }
+  }
 
 .fa-circle-check {
     font-size: 2em;
@@ -193,3 +214,4 @@ footer {
 }
 
 /*:::::::::::::::::::::::::MEDIA::::::::::*/
+
