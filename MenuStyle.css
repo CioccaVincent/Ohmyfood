@@ -103,6 +103,42 @@ input[type=checkbox]:checked:before {
     padding: 1em;
     border-radius: 20px;
     box-shadow: 0px 3px 3px 2px grey;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+.main_selection_menu_texte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.5s;
+}
+
+.main_selection_menu_texte_dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_selection_menu_texte b,
+.main_selection_menu_texte_dots p {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+
 }
 
 .main_selection_menu_texte b {
@@ -111,18 +147,30 @@ input[type=checkbox]:checked:before {
 }
 
 .main_selection_menu_texte p b {
-    float: right;
-    margin-right: 3em;
+    right: 0;
+}
+
+.main_selection_menu:hover .main_selection_valide {
+    transition: transform 0.5s;
+    transform: translate(10px);
+}
+
+.main_selection_menu:hover .main_selection_menu_texte {
+    justify-content: space-between;
+    display: flex;
+    width: calc(100% - 110px);
 }
 
 .main_selection_valide {
+    height: 100%;
+    transition: transform 0.5s;
     position: absolute;
     background-color: #99E2D0;
     border-radius: 0px 20px 20px 0px;
-    height: 6.6em;
     width: 7em;
     top: 0;
     right: 0;
+    transform: translate(100%);
 }
 
 .fa-circle-check {
@@ -138,21 +186,7 @@ input[type=checkbox]:checked:before {
 }
 
 .main_selection_menu:hover .main_selection_valide {
-    transform:translateX(-50%);
-    left: 50%;
     border-radius: 0px 25px 25px 0px;
-    animation:fill 2s ease-in-out ;
-  }
-
-  @keyframes fill {
-    from {
-      left:50px;
-      transform:translateX(-50%);
-    }
-    to {
-      left:0px;
-      transform:translateX(-50%);
-    }
   }
 
 .fa-circle-check {
@@ -222,3 +256,18 @@ footer {
 
 /*:::::::::::::::::::::::::MEDIA::::::::::*/
 
+@media screen and (max-width: 600px) {
+
+    .header_logo p {
+        font-size: 3em;
+    }
+    
+  }
+
+  @media screen and (max-width: 400px) {
+
+    .header_logo p {
+        font-size: 2em;
+    }
+    
+  }

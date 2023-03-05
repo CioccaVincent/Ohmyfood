@@ -1,8 +1,8 @@
 /*LOADER*/
-.box_loader {
+/* .box_loader {
     position: absolute;
     padding: 20em 0em 0em 50em;
-}
+} */
 .loader {
     width: 16px;
     height: 16px;
@@ -172,6 +172,7 @@ font-size: 2em;
 
 
 .main_restaurant_card figure {
+    position: relative;
     width: 40em;
     height: 25em;
     border-radius: 15px 15px 15px 15px;
@@ -180,7 +181,8 @@ font-size: 2em;
 
 .btn_nouveau {
     position: absolute;
-    margin: 0.9em 0em 0em 24em;
+    right: 0;
+    margin: 20px;
     background-color: #99E2D0;
     color: #008766;
     border: none;
