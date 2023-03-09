@@ -110,7 +110,7 @@ input[type=checkbox]:checked:before {
     -webkit-animation: fadein 2s;
 }
 
-@-webkit-keyframes fadein {
+@keyframes fadein {
     from {
         opacity:0;
     }

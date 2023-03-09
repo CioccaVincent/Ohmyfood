@@ -3,7 +3,7 @@
     position: absolute;
     padding: 20em 0em 0em 50em;
 } */
-.loader {
+/* .loader {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -16,7 +16,7 @@
     animation: shadowPulse 2s linear;
     animation-iteration-count: 3;
   }
-  
+   */
   @keyframes shadowPulse {
     33% {
       background: #FFF;
@@ -57,7 +57,7 @@ header {
 }
 
 .header_logo img {
-    padding: 1em 0em 1em 0em;
+    padding: 0.5em 0em 0.5em 0em;
 }
 
 .header_localisation {
@@ -167,7 +167,6 @@ font-size: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0em 2em;
 }
 
 
@@ -315,5 +314,20 @@ footer {
 
     .main_restaurant_card figure figcaption b, p {
         font-size: 1em;
+    }
+  }
+
+@media screen and (max-width: 425px) {
+
+    .main_fonctionnement_list ul {
+        margin-left: -4em;
+    }
+
+    .main_restaurant_card {
+        margin: -1.5em;
+    }
+
+    .header_logo img {
+        width: 20em;
     }
   }
