@@ -140,7 +140,8 @@ input[type=checkbox]:checked:before {
 
 }
 
-.main_selection_menu_texte b {
+.main_selection_menu_texte b,
+.main_selection_menu_texte strong {
     font-size: 1.2em;
     font-weight: bold;
 }
