@@ -323,13 +323,18 @@ footer {
     }
 
     .main_restaurant_card {
-        margin: 1.8em;
+        margin: 1.5em;
     }
 
     .main_restaurant_card figure {
-        width: 23em;
-        height: 19em;
+        width: 21em;
+        height: 18em;
         margin: 1em 0em;
+    }
+
+    .main_restaurant_card figure figcaption b,
+    .main_restaurant_card figure figcaption p {
+        font-size: 1.2em;
     }
 
     .header_logo img {
