@@ -26,7 +26,7 @@ h2 {
 @keyframes fadeOut {
     0% {opacity: 1;}
     100% {opacity: 0;
-        height: 0%;}
+        visibility: hidden;}
  }
 
 .box_loader img {
@@ -323,7 +323,13 @@ footer {
     }
 
     .main_restaurant_card {
-        margin: -1.5em;
+        margin: 1.8em;
+    }
+
+    .main_restaurant_card figure {
+        width: 23em;
+        height: 19em;
+        margin: 1em 0em;
     }
 
     .header_logo img {
